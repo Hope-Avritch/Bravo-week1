@@ -109,7 +109,7 @@
 function isPalindrome(myString) {  //madam, hello
     
     
-     return (reverseString(myString.replaceAll(" ","").toLowerCase(), false = myString.replaceAll(" ","").toLowerCase()));
+     return (reverseString(myString.replaceAll(" ","").toLowerCase(), false) = (myString.replaceAll(" ","").toLowerCase()));
 
 
   }
