@@ -6,7 +6,7 @@ let myName = "hope"
 
 //myName[0] = "H";
 
-console.log(myName):
+console.log(myName);
 
 //arrays are Mutable
 const colors = ["red", "blue", "green", "purple", "yellow"];
