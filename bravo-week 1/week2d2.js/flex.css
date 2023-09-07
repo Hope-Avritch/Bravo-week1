@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  flex-direction: row; /* row by default, not neccesarry to include unless different*/
+  justify-content: space-around; /*space-evenly = space inbetweeen the words are the same to the edges, more unused space in the margins*/
+  /*determine how items are spaced within the flexBox*/
+/*space-around= equally spaces the items;
+flex-start= starts from flex containter, everything stays far left*/
+
+  background-color: #333; /*first two numbers are how much a color pixel (rgb light) the second 2 green, 2nd 2 is blue, normally 6 numbers*/
+/*numbers the same give some shade of grey, #fff =white*/
+  padding: 1em 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px; /*looks more like oval with 50px*/
+  transition: background-color 0.2s;
+}
+
+ .navbar a:hover {   /* sudo selector */
+    background-color: #555;
+    transform: translateY(-5px);
+    
+}
