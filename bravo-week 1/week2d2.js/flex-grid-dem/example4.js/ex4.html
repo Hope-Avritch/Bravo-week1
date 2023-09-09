@@ -1,0 +1,51 @@
+<!--
+Exercise 4: Basic Event Handling
+Objective: Learn how to handle user events.
+
+Create an HTML page with an input box and a button.
+The user should type a color name or hex code into the box.
+When the button is clicked, change the background color of the page to the specified color.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 4: Basic Event Handling</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center
+         /*instead of text-decorations to get everything to view in the middle Per ChatGPT*/
+    }
+    #color-input {
+      padding:0.5em 1em;
+    }
+    #change-button {
+      color: whitesmoke;
+      padding: 0.5em 1em;
+      background-color: #333;
+      border: none;
+      cursor: pointer;
+    }
+</style>
+
+</head>
+<body>
+    <h1>Change Background Color</h1>
+    <p>Enter a color name or hex code:</p>
+    <input type="text" id="color-input" placeholder="Color name or hex code">
+    <button id="change-button">Change Color</button>
+
+    <script>
+        let colorInput = document.getElementById('color-input');
+        let changeButton = document.getElementById('change-button');
+
+        changeButton.addEventListener('click', () => {
+            let colorValue = colorInput.value;
+            document.body.style.backgroundColor = colorValue;
+        });
+    </script>
+</body>
+</html>
