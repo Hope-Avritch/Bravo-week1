@@ -1,0 +1,15 @@
+.guessBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    padding: 1em 0;
+}
+
+.rowLetter{
+    display: flex;
+    border-color: grey
+    border-width: 1px;
+    background-color: white
+    color: black
+}
