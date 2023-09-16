@@ -1,0 +1,110 @@
+//G = green, y = yellow, x = grey
+
+
+let word1 = "apple";
+let guess1 = "apply";
+
+//console.log("GGGGX");
+//compare two words to each other
+//console.log a string representing which letters match
+
+let word2 = "plays";
+let guess2 = "ponds";
+
+//console.log("GXXXG")
+
+let word3 = "ducks";
+let guess3 = "cakes";
+
+//console.log("YXYXG")
+
+
+function checkGuess(secretWord, guess) {
+    //create a variable to build our result string in
+    let results = "";
+    //loop through each letter of the guess
+    for (let i = 0; i< guess.length; i++) { 
+        //check if letter is in secret word
+        if (secretWord.includes(guess[i])) { 
+            //if so, check if letter are in the same position
+            if (secretWord[i] == guess[i]) {
+                //if so, add "G" to my result string   
+                results += "G" 
+            }
+            else {
+                //if not, add "Y" to results string
+                results += "Y"
+            }
+        }  
+                                                                
+        else {
+            //if not, add "X" to results string
+            results += "X"
+        }
+    }
+   //return the result string
+    return results;
+}
+    let myResult = checkGuess(word1, guess1)
+    console.log(myResult)
+    
+   
+
+checkGuess(word1, guess1)
+//"GGGGX"
+
+checkGuess(word2, guess2)
+//"GXXXG"
+
+checkGuess(word3, guess3)
+//"YXYXG"
+
+
+//  //define my results
+//  const resultString = "You guess the correct word";
+
+//  // Check if the result is correct
+//  if (resultString === "Expected Result") {
+//      // If it's correct, log the result
+//      console.log(resultString);
+//  }   
+//  else {
+//  // If it's not correct, log a different phrase
+//      console.log("The result is incorrect.");
+//  }
+
+
+
+
+
+// let myLetter = "A"
+
+// if myLetter.toLowerCase() == "a" {
+// console.log("message");
+// }
+// let resultsString = ""
+
+// let myWord = "alone"
+
+// let vowels = "aeiou"
+// for (let i = 0; i< myWord.length; i++) {  //loop through word
+//     if (vowels.includes(myWord[i])) {  //check on a particular condition
+//         resultString += myWord[i] //add something onto a string based on condition
+//     } else {
+//         resultString += "_";  //if condition not met, add something else to string
+//     }
+// else if, put yellow
+// if none is true then add on an x
+// }
+// console.log(resultsString);
+
+
+// function greeting(name){
+//     console.log("Hello" + name);
+
+// }
+// ]
+// greeting("Cody");
+
+// let myName = "Timmy"
+// greeting(myName);
